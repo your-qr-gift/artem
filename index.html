@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Voices</title>
+    <style>
+        html{
+            /* Это изображение отобразиться на всю страницу */
+            background:url('./src/back.JPG') no-repeat center center;
+            /* Принудительно указываем высоту равную 100% от высоты окна браузера */
+            min-height:100%;
+            /* Магия */
+            background-size:cover;
+        }
+
+        body{
+            /* Для некоторых мобильных браузеров */
+            min-height:100%;
+        }
+
+        .centered {
+            position: fixed; /* or absolute */
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height:100px;
+            margin: -50px 0 0 -100px;
+        }
+    </style>
+</head>
+<body>  
+    <br>  
+    <div class="centered">
+        <audio controls>
+            <source src="./src/audio.m4a">
+        </audio>
+    </div>
+
+</body>
+</html>
+
+
+
